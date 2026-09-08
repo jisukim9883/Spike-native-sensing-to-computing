@@ -1,6 +1,6 @@
 # Spike-native sensing-to-computing
 
-Code and data for "Spike-native Sensing-to-Computing Integrated System Enabled by Stochastic Operation of a Silicon Nanomembrane Artificial Retina" (under review).
+Code and data for "Spike-native Sensing-to-Computing Integrated System Enabled by Stochastic Operation of a Silicon Nanomembrane Artificial Retina".
 
 | Script | Reproduces |
 |---|---|
