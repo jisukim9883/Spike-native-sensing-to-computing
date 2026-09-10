@@ -1,0 +1,49 @@
+# Python caches and test output.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local Python environment.
+/.venv/
+
+# Local simulation regression tests.
+/simulation/tests/
+
+# Local simulation datasets, except measured retina recordings.
+/simulation/data/*
+!/simulation/data/measured_retina_events/
+
+# Regenerated optimization outputs.
+/results/
+
+# Only the published experiment artifacts are included below.
+/simulation/results/**
+!/simulation/results/26-09-09/
+!/simulation/results/26-09-09/15-58-15/
+!/simulation/results/26-09-09/15-58-15/model/
+!/simulation/results/26-09-09/15-58-15/snn/
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/emulation/
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/emulation/26-09-09/
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/emulation/26-09-09/16-16-21/
+!/simulation/results/26-09-09/15-58-15/metrics.csv
+!/simulation/results/26-09-09/15-58-15/model/MNIST_LENET5_best.pth
+!/simulation/results/26-09-09/15-58-15/reproducibility.json
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/MNIST_LENET5_best_neuron_thresholds.pkl
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/MNIST_LENET5_best_neurons.pkl
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/MNIST_LENET5_best_snn.pth
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/MNIST_LENET5_best_synapses.pkl
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/conversion_output.txt
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/conversion_summary.json
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/emulation/26-09-09/16-16-21/confusion_200steps.csv
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/emulation/26-09-09/16-16-21/emulation_output.txt
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/emulation/26-09-09/16-16-21/emulation_summary.json
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/emulation/26-09-09/16-16-21/event_manifest.csv
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/emulation/26-09-09/16-16-21/metrics.csv
+!/simulation/results/26-09-09/15-58-15/snn/26-09-09/16-05-07/emulation/26-09-09/16-16-21/predictions_200steps.csv
+!/simulation/results/26-09-09/15-58-15/summary.json
+!/simulation/results/26-09-09/15-58-15/training_output.txt

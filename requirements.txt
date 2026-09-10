@@ -1,0 +1,25 @@
+# Shared environment for optimization, ANN training, conversion, and SNN emulation.
+# Python 3.11.14; use the official CUDA 12.8 wheel index for PyTorch.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+numpy==2.4.2
+pandas==3.0.0
+torch==2.10.0
+torchvision==0.25.0
+bindsnet==0.2.7
+rich==14.3.2
+nvidia-ml-py==13.590.48
+
+# BindsNET imports these packages even when only its network simulator is used.
+gymnasium==1.2.3
+gym==0.26.2
+tensorboardX==2.6.4
+tqdm==4.67.3
+matplotlib==3.10.8
+scikit-image==0.26.0
+scikit-learn==1.8.0
+opencv-python==4.13.0.92
+scipy==1.17.0
+Cython==3.2.4
+pytest==9.0.2
+pillow==12.1.0

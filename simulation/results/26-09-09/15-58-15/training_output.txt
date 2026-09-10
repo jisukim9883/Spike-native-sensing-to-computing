@@ -1,0 +1,107 @@
+Preparing run: MNIST_LENET5
+Run directory: simulation/results/26-09-09/15-58-15
+Log file: simulation/results/26-09-09/15-58-15/training_output.txt
+
+Initialization preview: shape=(128, 1, 28, 28), pixel range=[0.0, 1.0]
+Experiment Conditions
+------------------------------------------------------------------------
+Run name                : MNIST_LENET5
+Date                    : 26-09-09
+Time                    : 15-58-15
+Command                 : simulation/training.py --name MNIST_LENET5 --epochs 50 --batch-size 128 --lr 0.001 --optimizer adam --weight-decay 0 --seed 42 --num-workers 0 --no-bias --data-dir simulation/data --device cuda --gpu-id 0 --no-download --no-progress
+Run directory           : simulation/results/26-09-09/15-58-15
+Model directory         : simulation/results/26-09-09/15-58-15/model
+Checkpoint directory    : simulation/results/26-09-09/15-58-15/checkpoints
+Output log              : simulation/results/26-09-09/15-58-15/training_output.txt
+
+Dataset
+------------------------------------------------------------------------
+Dataset                 : MNIST
+Data directory          : simulation/data
+Download enabled        : False
+Input transform         : ToTensor
+Train samples           : 60000
+Test samples            : 10000
+Batch size              : 128
+DataLoader workers      : 0
+
+Model And Training
+------------------------------------------------------------------------
+Architecture            : LeNet5
+Layer sequence          : Conv5x5-6, AvgPool, Conv5x5-16, AvgPool, Conv5x5-120, FC84, FC10
+Bias                    : False
+Total parameters        : 61470
+Trainable parameters    : 61470
+Epochs                  : 50
+Optimizer               : adam
+Learning rate           : 0.001
+Scheduler               : CosineAnnealingLR
+Loss                    : CrossEntropyLoss
+Seed                    : 42
+Device                  : cuda:0
+
+Training started.
+Epoch 001/050 | lr 0.001000 | train_loss 0.6053 | test_loss 0.1889 | test_acc 94.15% | time 9.03s | best 94.15% @ 1 *best
+Epoch 002/050 | lr 0.000999 | train_loss 0.1531 | test_loss 0.1149 | test_acc 96.19% | time 6.26s | best 96.19% @ 2 *best
+Epoch 003/050 | lr 0.000996 | train_loss 0.1024 | test_loss 0.0697 | test_acc 97.62% | time 6.25s | best 97.62% @ 3 *best
+Epoch 004/050 | lr 0.000991 | train_loss 0.0803 | test_loss 0.0636 | test_acc 97.98% | time 6.76s | best 97.98% @ 4 *best
+Epoch 005/050 | lr 0.000984 | train_loss 0.0685 | test_loss 0.0558 | test_acc 98.12% | time 6.53s | best 98.12% @ 5 *best
+Epoch 006/050 | lr 0.000976 | train_loss 0.0570 | test_loss 0.0438 | test_acc 98.58% | time 6.93s | best 98.58% @ 6 *best
+Epoch 007/050 | lr 0.000965 | train_loss 0.0497 | test_loss 0.0512 | test_acc 98.28% | time 6.69s | best 98.58% @ 6
+Epoch 008/050 | lr 0.000952 | train_loss 0.0446 | test_loss 0.0412 | test_acc 98.73% | time 5.72s | best 98.73% @ 8 *best
+Epoch 009/050 | lr 0.000938 | train_loss 0.0383 | test_loss 0.0372 | test_acc 98.80% | time 5.92s | best 98.80% @ 9 *best
+Epoch 010/050 | lr 0.000922 | train_loss 0.0334 | test_loss 0.0428 | test_acc 98.62% | time 6.73s | best 98.80% @ 9
+Epoch 011/050 | lr 0.000905 | train_loss 0.0297 | test_loss 0.0365 | test_acc 98.73% | time 6.63s | best 98.80% @ 9
+Epoch 012/050 | lr 0.000885 | train_loss 0.0272 | test_loss 0.0302 | test_acc 99.03% | time 6.64s | best 99.03% @ 12 *best
+Epoch 013/050 | lr 0.000864 | train_loss 0.0234 | test_loss 0.0306 | test_acc 99.02% | time 6.18s | best 99.03% @ 12
+Epoch 014/050 | lr 0.000842 | train_loss 0.0214 | test_loss 0.0315 | test_acc 99.02% | time 6.67s | best 99.03% @ 12
+Epoch 015/050 | lr 0.000819 | train_loss 0.0182 | test_loss 0.0338 | test_acc 98.95% | time 6.34s | best 99.03% @ 12
+Epoch 016/050 | lr 0.000794 | train_loss 0.0178 | test_loss 0.0346 | test_acc 98.88% | time 6.05s | best 99.03% @ 12
+Epoch 017/050 | lr 0.000768 | train_loss 0.0140 | test_loss 0.0403 | test_acc 98.88% | time 6.43s | best 99.03% @ 12
+Epoch 018/050 | lr 0.000741 | train_loss 0.0134 | test_loss 0.0321 | test_acc 98.98% | time 6.43s | best 99.03% @ 12
+Epoch 019/050 | lr 0.000713 | train_loss 0.0113 | test_loss 0.0374 | test_acc 98.97% | time 6.88s | best 99.03% @ 12
+Epoch 020/050 | lr 0.000684 | train_loss 0.0106 | test_loss 0.0315 | test_acc 99.12% | time 5.68s | best 99.12% @ 20 *best
+Epoch 021/050 | lr 0.000655 | train_loss 0.0089 | test_loss 0.0332 | test_acc 99.10% | time 5.88s | best 99.12% @ 20
+Epoch 022/050 | lr 0.000624 | train_loss 0.0090 | test_loss 0.0313 | test_acc 99.12% | time 6.45s | best 99.12% @ 20
+Epoch 023/050 | lr 0.000594 | train_loss 0.0074 | test_loss 0.0309 | test_acc 99.14% | time 6.56s | best 99.14% @ 23 *best
+Epoch 024/050 | lr 0.000563 | train_loss 0.0057 | test_loss 0.0361 | test_acc 99.07% | time 6.31s | best 99.14% @ 23
+Epoch 025/050 | lr 0.000531 | train_loss 0.0050 | test_loss 0.0381 | test_acc 98.99% | time 6.38s | best 99.14% @ 23
+Epoch 026/050 | lr 0.000500 | train_loss 0.0051 | test_loss 0.0430 | test_acc 98.95% | time 6.57s | best 99.14% @ 23
+Epoch 027/050 | lr 0.000469 | train_loss 0.0054 | test_loss 0.0393 | test_acc 99.03% | time 6.18s | best 99.14% @ 23
+Epoch 028/050 | lr 0.000437 | train_loss 0.0036 | test_loss 0.0384 | test_acc 99.09% | time 6.27s | best 99.14% @ 23
+Epoch 029/050 | lr 0.000406 | train_loss 0.0030 | test_loss 0.0404 | test_acc 99.12% | time 6.19s | best 99.14% @ 23
+Epoch 030/050 | lr 0.000376 | train_loss 0.0023 | test_loss 0.0406 | test_acc 99.06% | time 6.22s | best 99.14% @ 23
+Epoch 031/050 | lr 0.000345 | train_loss 0.0021 | test_loss 0.0410 | test_acc 99.04% | time 6.76s | best 99.14% @ 23
+Epoch 032/050 | lr 0.000316 | train_loss 0.0018 | test_loss 0.0420 | test_acc 99.08% | time 6.63s | best 99.14% @ 23
+Epoch 033/050 | lr 0.000287 | train_loss 0.0018 | test_loss 0.0414 | test_acc 99.20% | time 6.71s | best 99.20% @ 33 *best
+Epoch 034/050 | lr 0.000259 | train_loss 0.0014 | test_loss 0.0387 | test_acc 99.20% | time 6.24s | best 99.20% @ 33
+Epoch 035/050 | lr 0.000232 | train_loss 0.0010 | test_loss 0.0401 | test_acc 99.20% | time 6.07s | best 99.20% @ 33
+Epoch 036/050 | lr 0.000206 | train_loss 0.0010 | test_loss 0.0399 | test_acc 99.15% | time 6.35s | best 99.20% @ 33
+Epoch 037/050 | lr 0.000181 | train_loss 0.0007 | test_loss 0.0428 | test_acc 99.18% | time 5.57s | best 99.20% @ 33
+Epoch 038/050 | lr 0.000158 | train_loss 0.0009 | test_loss 0.0419 | test_acc 99.14% | time 6.45s | best 99.20% @ 33
+Epoch 039/050 | lr 0.000136 | train_loss 0.0005 | test_loss 0.0449 | test_acc 99.13% | time 6.38s | best 99.20% @ 33
+Epoch 040/050 | lr 0.000115 | train_loss 0.0004 | test_loss 0.0430 | test_acc 99.13% | time 6.13s | best 99.20% @ 33
+Epoch 041/050 | lr 0.000095 | train_loss 0.0003 | test_loss 0.0441 | test_acc 99.15% | time 6.66s | best 99.20% @ 33
+Epoch 042/050 | lr 0.000078 | train_loss 0.0003 | test_loss 0.0447 | test_acc 99.15% | time 6.74s | best 99.20% @ 33
+Epoch 043/050 | lr 0.000062 | train_loss 0.0003 | test_loss 0.0456 | test_acc 99.11% | time 6.70s | best 99.20% @ 33
+Epoch 044/050 | lr 0.000048 | train_loss 0.0002 | test_loss 0.0461 | test_acc 99.12% | time 6.66s | best 99.20% @ 33
+Epoch 045/050 | lr 0.000035 | train_loss 0.0002 | test_loss 0.0459 | test_acc 99.11% | time 6.57s | best 99.20% @ 33
+Epoch 046/050 | lr 0.000024 | train_loss 0.0002 | test_loss 0.0464 | test_acc 99.12% | time 6.28s | best 99.20% @ 33
+Epoch 047/050 | lr 0.000016 | train_loss 0.0002 | test_loss 0.0462 | test_acc 99.11% | time 7.05s | best 99.20% @ 33
+Epoch 048/050 | lr 0.000009 | train_loss 0.0002 | test_loss 0.0463 | test_acc 99.11% | time 6.61s | best 99.20% @ 33
+Epoch 049/050 | lr 0.000004 | train_loss 0.0002 | test_loss 0.0463 | test_acc 99.14% | time 6.51s | best 99.20% @ 33
+Epoch 050/050 | lr 0.000001 | train_loss 0.0002 | test_loss 0.0463 | test_acc 99.14% | time 6.63s | best 99.20% @ 33
+
+Training Summary
+------------------------------------------------------------------------
+Best accuracy           : 99.20%
+Best epoch              : 33
+Final accuracy          : 99.14%
+Total time              : 323.52 s
+Average epoch time      : 6.47 s
+Best weights            : simulation/results/26-09-09/15-58-15/model/MNIST_LENET5_best.pth
+Last weights            : simulation/results/26-09-09/15-58-15/model/MNIST_LENET5_last.pth
+Metrics                 : simulation/results/26-09-09/15-58-15/metrics.csv
+Summary                 : simulation/results/26-09-09/15-58-15/summary.json
+Output log              : simulation/results/26-09-09/15-58-15/training_output.txt
+

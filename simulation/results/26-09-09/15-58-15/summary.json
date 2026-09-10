@@ -1,0 +1,35 @@
+{
+  "timestamp": {
+    "date": "26-09-09",
+    "time": "15-58-15"
+  },
+  "run_name": "MNIST_LENET5",
+  "dataset": "MNIST",
+  "architecture": "LeNet5",
+  "best_accuracy": 99.2,
+  "best_epoch": 33,
+  "final_accuracy": 99.14,
+  "total_time_s": 323.520007,
+  "avg_epoch_time_s": 6.4704,
+  "config": {
+    "epochs": 50,
+    "batch_size": 128,
+    "lr": 0.001,
+    "optimizer": "adam",
+    "weight_decay": 0.0,
+    "momentum": 0.0,
+    "bias": false,
+    "seed": 42,
+    "device": "cuda:0",
+    "data_dir": "simulation/data",
+    "output_dir": "simulation/results",
+    "download": false,
+    "num_workers": 0
+  },
+  "files": {
+    "best_weights": "simulation/results/26-09-09/15-58-15/model/MNIST_LENET5_best.pth",
+    "metrics": "simulation/results/26-09-09/15-58-15/metrics.csv",
+    "log": "simulation/results/26-09-09/15-58-15/training_output.txt"
+  },
+  "retained_model": "best MNIST test accuracy, first maximum at epoch 33"
+}
